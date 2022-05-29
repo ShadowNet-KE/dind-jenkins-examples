@@ -3,7 +3,7 @@ pipeline {
         disableConcurrentBuilds()
     }
     agent {
-        dind-1.0.0 {
+        label 'dind-1.0.0' {
             defaultContainer 'docker-client'
             yaml """
 apiVersion: v1
